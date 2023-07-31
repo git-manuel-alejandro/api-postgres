@@ -9,10 +9,6 @@ import (
 	"github.com/gorilla/mux"
 )
 
-type Message struct {
-	Msg string
-}
-
 func PostUsersHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-type", "application/json")
 
